@@ -5,8 +5,6 @@ import os
 # Elevates the program's privaleges to make it so that the mklink command actually works.
 elevate()
 
-# It didn't want to push so i have to edit so it actually pushes
-
 # Basic base for aksing for the source file path to allow to have shorter code, while-
 # allowing for normal and hardlink symlinks to be created in their own block of code.
 def slinkfile():
@@ -29,7 +27,7 @@ print("SymlinkGen v1.0.0")
 print("A. Windows")
 print("B. Unix-based (Not supported YET!!!dsfojgthn)")
 ossel = input("[A/B]> ")
-if ossel == "A" or "a":
+if ossel == "A" or ossel == "a":
     # RunLoop to allow for the code to be run again if an error occurs or if the user want to create multiple symlinks.
     while processfinished == False:
         print("Select symlink type:")
@@ -95,11 +93,11 @@ if ossel == "A" or "a":
             print("Invalid input! Please try again.")
             print("Please choose another option.")
             time.sleep(1)
-elif ossel == "B" or "b":
+elif ossel == "B" or ossel == "b":
     print("ts pmo icl 💔💔💔")
     print("jokes aside, i genuinely dont feel like doing this rn so check the next update")
     time.sleep(5)
-elif ossel == "C" or "c":
+elif ossel == "C" or ossel == "c":
     print("why did you genuinely think that this would work")
     time.sleep(1)
     print("no like seriously")
