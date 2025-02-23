@@ -5,6 +5,8 @@ import os
 # Elevates the program's privaleges to make it so that the mklink command actually works.
 elevate()
 
+
+
 # Basic base for aksing for the source file path to allow to have shorter code, while-
 # allowing for normal and hardlink symlinks to be created in their own block of code.
 def slinkfile():
